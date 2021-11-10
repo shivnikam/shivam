@@ -30,13 +30,13 @@ public class ShapeFactory {
       if(shapeType == null){
          return null;
       }		
-      if(shapeType.equalsIgnoreCase("CIRCLE")){
+      if(shapeType.equals("CIRCLE")){
          return new Circle();
          
-      } else if(shapeType.equalsIgnoreCase("RECTANGLE")){
+      } else if(shapeType.equals("RECTANGLE")){
          return new Rectangle();
          
-      } else if(shapeType.equalsIgnoreCase("SQUARE")){
+      } else if(shapeType.equals("SQUARE")){
          return new Square();
       }
       
