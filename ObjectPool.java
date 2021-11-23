@@ -125,7 +125,7 @@ private ScheduledExecutorService executorService;
     }  
 
  public void ObjectPool() {  
-        //ExecutorService executor = Executors.newFixedThreadPool(8);  
+        ExecutorService executor = Executors.newFixedThreadPool(8);  
      executor.execute(new ExportingTask(pool, 1));  
         executor.execute(new ExportingTask(pool, 2));  
         executor.execute(new ExportingTask(pool, 3));  
